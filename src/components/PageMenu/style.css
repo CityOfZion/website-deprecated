@@ -1,0 +1,31 @@
+.pageMenu a {
+  display: inline-block;
+  text-decoration: none;
+  color: #FFF;
+  position: relative;
+  font-family: orbitron, sans-serif;
+  text-transform: uppercase;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.pageMenu a:after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0px;
+  right: 0px;
+  height: 3px;
+}
+
+.pageMenu a:hover,
+.pageMenu a:active,
+.pageMenu a.active {
+  opacity: 1;
+}
+
+.pageMenu a:active:after,
+.pageMenu .active:after {
+  background-image: linear-gradient(to right, #2A43C1, #4598FF);
+  box-shadow: 0 2px 4px #13132F;
+}

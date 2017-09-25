@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'orbitron';
+    src: url('/assets/fonts/orbitron-bold-webfont.woff2') format('woff2'),
+         url('/assets/fonts/orbitron-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'source_sans_pro';
+    src: url('/assets/fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
+         url('/assets/fonts/sourcesanspro-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'teko_numbers';
+    src: url('/assets/fonts/teko-regular-webfont.woff2') format('woff2'),
+         url('/assets/fonts/teko-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	background: #2B2B5E;
+	font-family: 'Helvetica Neue', arial, sans-serif;
+	font-weight: 400;
+	color: #fff;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: source_sans_pro, sans-serif;
+}
+
+a, a:link {
+  color: #4598FF;
+}
+a:hover, a:active {
+  color: #73B1FF;
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+#app {
+	border: 10px solid #2B2B5E;
+  box-shadow: inset 0px 0px 100px rgba(25, 24, 49, 0.1);
+  background: #212146 url('/assets/images/page-bg.jpg') top center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 20px;
+  min-width: 280px;
+}
+
+@media screen and (min-width: 351px) {
+  #app {
+    border-width: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #app {
+    background-attachment: scroll;
+  }
+  .title h1 {
+    font-size: 35px;
+  }
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 23px;
+  height: 14px;
+  right: 19px;
+  top: 24px;
+  z-index: 200 !important;
+}
+
+@media screen and (min-width: 351px) {
+  .bm-burger-button {
+    right: 49px;
+    top: 33px;
+  }
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #4096ff;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+  display: none;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #343470;
+  padding: 100px 20px 0;
+  font-size: 1.15em;
+  margin-top: -120px;
+  text-align: right;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+}
+
+.bm-item-list a {
+  margin: 30px 35px;
+  font-size: 16px;
+  display: inline-block !important;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+  margin: -120px 20px 20px 0;
+}
+
+@media screen and (min-width: 992px) {
+  .bm-burger-button,
+  .bm-overlay,
+  .bm-menu-wrap {
+    display: none;
+  }
+}

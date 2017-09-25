@@ -1,0 +1,103 @@
+.governanceList {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.governanceList:before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  background-image: linear-gradient(#4598FF, #2A43C1);
+}
+
+.governanceList .content {
+  padding-top: 30px;
+}
+.governanceList .content p {
+  margin: 0;
+}
+
+.governanceList .content h3 {
+  font-size: 12px;
+  color: #8686E2;
+  margin: 15px 0 0;
+}
+
+.governanceList .count {
+  font-family: 'teko_numbers', sans-serif;
+  font-size: 85px;
+  margin: 0;
+}
+
+.governanceList .count small {
+  font-size: 14px;
+  font-family: orbitron, sans-serif;
+  text-transform: uppercase;
+  vertical-align: top;
+  display: inline-block;
+  margin: 16px 10px 0 0;
+}
+
+.governanceList .itemContent {
+  background-color: #333372;
+  padding: 0 22px 30px;
+  min-height: 320px;
+  position: relative;
+}
+
+.governanceList .itemContent:before {
+  content: "";
+  display: block;
+  width: 63%;
+  height: 2px;
+  background-color: rgba(67, 67, 134, .9);
+  float: right;
+  margin: 40px -22px 0 0;
+}
+
+.governanceList .itemWrapper {
+  padding: 20px 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.governanceList .itemWrapper:after {
+  content: "";
+  width: 0;
+  height: 0;
+  margin-left: -20px;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  border: 10px solid #333372;
+  border-right: 10px solid transparent;
+  border-top: 10px solid transparent;
+}
+
+.governanceList .itemWrapper:before {
+  content: "";
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  background: #333372;
+}
+
+.governanceList .thumbnail {
+  display: inline-block;
+  padding: 0 0 3px;
+  position: relative;
+  background-image: linear-gradient(to right, #4598FF, #2A43C1);
+  max-width: 100%;
+  height: auto;
+}
+
+.governanceList .secondary {
+  font-size: 14px;
+  word-wrap: break-word;
+}

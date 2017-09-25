@@ -1,0 +1,18 @@
+.contentWrapper,
+.contentWrapperNarrow {
+  width: 1360px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.contentWrapperNarrow {
+  width: 1020px;
+}
+
+@media screen and (min-width: 351px) {
+  .contentWrapper,
+  .contentWrapperNarrow {
+    padding: 0 40px;
+  }
+}

@@ -1,0 +1,142 @@
+.resources {
+  position: relative;
+}
+
+.resources .accent {
+  background-image: linear-gradient(to right, #4598FF, #2A43C1);
+  height: 3px;
+  position: absolute;
+  right: 59px;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.resources .wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.resources .wrapper:after {
+  content: "";
+  width: 0;
+  height: 0;
+  margin-left: -60px;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  border: 30px solid #2B2B5E;
+  border-right: 30px solid transparent;
+  border-top: 30px solid transparent;
+}
+
+.resources .wrapper:before {
+  content: "";
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  right: 60px;
+  background: #2B2B5E;
+}
+
+.resources .container {
+  padding: 60px 0 80px;
+  background: #2B2B5E url('/assets/images/resources.svg') bottom right no-repeat;
+  margin-top: 60px;
+  min-height: 600px;
+}
+
+.resources .subtitle {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 0 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .resources .subtitle {
+    max-width: 85%;
+  }
+}
+
+.resources hr {
+  height: 4px;
+  width: 225px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  margin: 20px 0 50px;
+}
+
+.resources .socialList {
+  text-align: center;
+  font-family: orbitron, sans-serif;
+}
+
+.resources .socialList h2,
+.resources .socialList p {
+  margin: 0;
+}
+.resources .socialList h2 {
+  text-transform: uppercase;
+  font-size: 17px;
+}
+
+.resources .socialList p {
+  font-size: 12px;
+}
+
+.resources .socialList a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.resources .socialList .itemContent {
+  overflow: hidden;
+  padding-top: 18px;
+}
+
+.resources .socialList img {
+  width: 80px;
+}
+
+@media screen and (min-width: 576px) {
+  .resources .socialList {
+    text-align: left;
+  }
+
+  .resources .socialList img {
+    float: left;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .resources .socialList img {
+    width: 80px;
+  }
+}
+
+.resources .license,
+.resources .pullRequest,
+.resources .testNet {
+  margin: 0;
+}
+
+.resources .license,
+.resources .pullRequest {
+  font-size: 20px;
+}
+
+.resources .license {
+  font-weight: bold;
+}
+
+.resources .pullRequest {
+  margin-bottom: 20px;
+}
+
+.resources .testNet {
+  font-size: 13px;
+  font-style: italic;
+  max-width: 85%;
+}

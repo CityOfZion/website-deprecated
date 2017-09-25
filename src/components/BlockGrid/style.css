@@ -1,0 +1,61 @@
+.blockGrid {
+  margin: 0 -1.5%;
+}
+
+.blockGrid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.blockGrid .itemThird,
+.blockGrid .itemFourth {
+  padding: 0 1.5%;
+  height: auto;
+  float: left;
+  clear: none;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .blockGrid .itemThird {
+    display: inline-block;
+    width: 49.25%;
+  }
+  .blockGrid .itemThird:nth-of-type(2n+1) {
+    clear: both;
+  }
+
+  .blockGrid .itemFourth {
+    width: 33.333333%;
+  }
+  .blockGrid .itemFourth:nth-of-type(2n+1) {
+    clear: none;
+  }
+  .blockGrid .itemFourth:nth-of-type(3n+1) {
+    clear: both;
+  }
+}
+
+@media screen and (min-width: 922px) {
+  .blockGrid .itemThird {
+    width: 33.333333%;
+  }
+  .blockGrid .itemThird:nth-of-type(2n+1) {
+    clear: none;
+  }
+  .blockGrid .itemThird:nth-of-type(3n+1) {
+    clear: both;
+  }
+
+  .blockGrid .itemFourth {
+    width: 25%;
+  }
+  .blockGrid .itemFourth:nth-of-type(3n+1) {
+    clear: none;
+  }
+  .blockGrid .itemFourth:nth-of-type(4n+1) {
+    clear: both;
+  }
+}

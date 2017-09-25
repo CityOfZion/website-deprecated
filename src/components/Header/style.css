@@ -1,0 +1,68 @@
+.header {
+  width: 100%;
+  z-index: 100;
+}
+
+.header nav {
+  float: right;
+  margin-top: 7px;
+  display: none;
+}
+
+.header nav a {
+  padding: 0 0 5px;
+  margin: 0 20px;
+  min-width: 50px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.header nav {
+  float: right;
+  display: block;
+}
+
+.header .logo {
+  width: 172px;
+  height: 25.6px;
+  display: inline-block;
+}
+
+@media screen and (min-width: 351px) {
+  .header .logo {
+    width: 207px;
+    height: 30.8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header .logo {
+    width: 242px;
+    height: 36px;
+  }
+}
+
+.header .headerWrapper,
+.header .headerWrapperVisible {
+  transition: background-color 0.5s ease;
+  padding: 20px 0 15px;
+  background-color: none;
+  margin-right: -20px;
+}
+
+.header .headerWrapperVisible {
+  background-color: #2B2B5E;
+}
+
+@media screen and (max-width: 991px) {
+  .header nav {
+    visibility: hidden;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .header .headerWrapper,
+  .header .headerWrapperVisible {
+    margin-right: 0;
+  }
+}

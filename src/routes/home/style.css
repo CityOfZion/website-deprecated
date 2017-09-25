@@ -1,0 +1,77 @@
+.home {
+	width: 100%;
+}
+
+.home .headingCOZ,
+.home .subHeadingCOZ {
+  font-family: orbitron, sans-serif;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+
+.home .headingCOZ {
+  font-size: 50px;
+  letter-spacing: 16px;
+}
+
+@media screen and (min-width: 922px) {
+  .home .headingCOZ {
+    font-size: 64px;
+  }
+}
+
+.home .subHeadingCOZ {
+  font-size: 17px;
+}
+
+.home .tagline {
+  display: inline-block;
+  padding: 0 15px 0 30px;
+  margin: 0 0 0 -15px;
+  transform: skew(-15deg);
+  background-image: linear-gradient(to right, #2A43C1, #4598FF);
+  overflow:hidden;
+  position:relative;
+  text-shadow: 0px 1px #2f53cd;
+}
+
+.home .taglineContent {
+  padding: 6px 0 4px;
+  transform: skew(15deg);
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: .75px;
+}
+
+.home .taglineWrapper {
+  overflow: hidden;
+  padding-right: 12px;
+}
+
+.home .heroContent {
+  max-width: 600px;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.home .subtitle {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 0 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .home .subtitle {
+    max-width: 85%;
+  }
+}
+
+.home .governanceSubtitle {
+  text-align: center;
+  margin-bottom: 120px;
+}
+
+.home .welcomeBox {
+  padding: 180px 0;
+}

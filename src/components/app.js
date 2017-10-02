@@ -18,12 +18,25 @@ export default class App extends Component {
       pageMenu: {
         links: [
           { name: 'Welcome', target: 'welcome' },
+          { name: 'Events', target: 'events' },
           { name: 'Projects', target: 'projects' },
           { name: 'Governance', target: 'governance' },
           { name: 'Resources', target: 'resources' },
         ]
       },
       content: {
+        eventList: [
+          {
+            description: "The City of Zion council is promoting a decentralised apps (dApps) competition to further elevate the NEO developer community.",
+            heading: "dApps Competition #1",
+            link: "Submit your registration",
+            target: "https://cityofzion.io/dapps/1",
+            thumbnail: {
+              alt: "dApps Competition #1",
+              src: "/assets/images/dapps-comp-1.png"
+            }
+          }
+        ],
         projectList: [
           {
             description: "An Electron-based light wallet (no need for chain copy nor VM) for Windows, OSX, and Linux users.",

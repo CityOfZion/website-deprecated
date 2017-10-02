@@ -1,0 +1,21 @@
+.eventList {
+  margin-bottom: 50px;
+}
+
+.eventList h2 {
+  font-family: orbitron, sans-serif;
+  text-transform: uppercase;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+.eventList .thumbnail {
+  display: inline-block;
+  padding: 0 0 3px;
+  position: relative;
+  background-image: linear-gradient(to right, #2A43C1, #4598FF);
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 2px 4px #13132F;
+}
+

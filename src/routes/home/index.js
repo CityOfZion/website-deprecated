@@ -6,6 +6,7 @@ const scrollSpy = Scroll.scrollSpy;
 
 import ContentWrapper from '../../components/ContentWrapper';
 import GovernanceList from '../../components/GovernanceList';
+import EventList from '../../components/EventList';
 import ProjectList from '../../components/ProjectList';
 import Resources from '../../components/Resources';
 import Title from '../../components/Title';
@@ -24,6 +25,7 @@ export default class Home extends Component {
   render() {
     const {
       governanceList,
+      eventList,
       projectList,
       resources
     } = this.props.content;
@@ -45,6 +47,17 @@ export default class Home extends Component {
                 </div>
 
                 <p class={ style.heroContent }>We are an independent group of open source developers, designers and translators formed to support the NEO BlockChain core and ecosystem.</p>
+              </ContentWrapper>
+            </Element>
+          </section>
+
+          <section>
+            <Element name="events">
+              <ContentWrapper narrow>
+                <Title>Events</Title>
+                <p class={ style.subtitle }>Events and competitions run for the community by the City of Zion.</p>
+
+                <EventList list={ eventList } />
               </ContentWrapper>
             </Element>
           </section>

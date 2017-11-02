@@ -7,7 +7,7 @@
     "test": "eslint src",
     "lintFix": "eslint --fix .",
     "start": "if-env NODE_ENV=production && npm run -s serve || npm run -s dev",
-    "build": "preact build",
+    "build": "preact build && cp -r ./src/assets/root/* ./build/",
     "serve": "preact build && preact serve",
     "dev": "preact watch"
   },

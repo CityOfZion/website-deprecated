@@ -1,15 +1,19 @@
-import { h, Component } from 'preact';
+import PropTypes from 'prop-types';
 
-import style from './style';
+import style from './style.css';
 
-const Footer = ( props ) => {
+const Footer = (props) => {
   const {
-    copyright
+    copyright,
   } = props;
 
   return (
-    <footer class={ style.footer }>{ copyright }</footer>
-  )
+    <footer className={style.footer}>{ copyright }</footer>
+  );
+};
+
+Footer.propTypes = {
+  copyright: PropTypes.string.isRequired,
 };
 
 export default Footer;

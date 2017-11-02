@@ -1,58 +1,65 @@
-import { h, Component } from 'preact';
+import PropTypes from 'prop-types';
 
 import BlockGrid from '../../components/BlockGrid';
 import ContentWrapper from '../../components/ContentWrapper';
 import Title from '../../components/Title';
 
-import style from './style';
+import style from './style.css';
 
-const Resources = ( props ) => {
+const Resources = (props) => {
   const {
-    socialList
+    socialList,
   } = props;
 
-  const listItems = socialList.map((item) =>
-    <div class={ style.socialList }>
-      <a href={ item.target }>
-        <img
-          alt={ item.name }
-          src={ item.logo }
-        />
+  const listItems = socialList.map(item =>
+    (
+      <div className={style.socialList}>
+        <a href={item.target}>
+          <img
+            alt={item.name}
+            src={item.logo}
+          />
 
-        <div class={ style.itemContent }>
-          <h2>{ item.heading }</h2>
-          <p>{ item.subtitle }</p>
-        </div>
-      </a>
-    </div>
-  );
+          <div className={style.itemContent}>
+            <h2>{ item.heading }</h2>
+            <p>{ item.subtitle }</p>
+          </div>
+        </a>
+      </div>));
 
   return (
-    <div class={ style.resources }>
-      <div class={ style.accent } />
-      <div class={ style.wrapper }>
-        <div class={ style.container }>
+    <div className={style.resources}>
+      <div className={style.accent} />
+      <div className={style.wrapper}>
+        <div className={style.container}>
           <ContentWrapper narrow>
             <Title>Resources</Title>
 
-            <p class={ style.subtitle }>Anyone can join us to work together or be a source of technical support.</p>
+            <p className={style.subtitle}>Anyone can join us to work together or be a source of technical support.</p>
 
-            <BlockGrid items={ listItems } />
+            <BlockGrid items={listItems} />
 
             <hr />
 
-            <p class={ style.license }>Our code is free and 100% MIT-licensed; Even this website!</p>
-            <p class={ style.pullRequest }>If you feel you can improve on anything, just send us a pull request.*</p>
-            <p class={ style.testNet }>*We run JSON-RPC nodes for the mainnet and testnet networks at seed[1-5].cityofzion.io:8880 Furthermore, we are able to provide testnet NEO and GAS for collaborating developers.</p>
+            <p className={style.license}>Our code is free and 100% MIT-licensed; Even this website!</p>
+            <p className={style.pullRequest}>If you feel you can improve on anything, just send us a pull request.*</p>
+            <p className={style.testNet}>
+              *We run JSON-RPC nodes for the mainnet and testnet networks at seed[1-5].cityofzion.io:8880
+              Furthermore, we are able to provide testnet NEO and GAS for collaborating developers.
+            </p>
           </ContentWrapper>
         </div>
       </div>
     </div>
-  )
+  );
 };
 
 Resources.defaultProps = {
   socialList: [],
-}
+};
+
+Resources.propTypes = {
+  socialList: PropTypes.array,
+};
 
 export default Resources;

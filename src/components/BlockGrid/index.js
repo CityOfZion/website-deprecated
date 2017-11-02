@@ -1,29 +1,34 @@
-import { h, Component } from 'preact';
+import PropTypes from 'prop-types';
 
-import style from './style';
+import style from './style.css';
 
-const BlockGrid = ( props ) => {
+const BlockGrid = (props) => {
   const {
     items,
-    size
+    size,
   } = props;
 
-  const gridItems = items.map((item) =>
-    <div class={ (size === 3) ? style.itemThird : style.itemFourth }>
-      { item }
-    </div>
-  );
+  const gridItems = items.map(item =>
+    (
+      <div className={(size === 3) ? style.itemThird : style.itemFourth}>
+        { item }
+      </div>));
 
   return (
-    <div class={ style.blockGrid }>
+    <div className={style.blockGrid}>
       { gridItems }
     </div>
-  )
+  );
 };
 
 BlockGrid.defaultProps = {
   items: [],
-  size: 3
-}
+  size: 3,
+};
+
+BlockGrid.propTypes = {
+  items: PropTypes.array,
+  size: PropTypes.number,
+};
 
 export default BlockGrid;

@@ -1,38 +1,41 @@
-import { h, Component } from 'preact';
-import { Sticky } from 'react-sticky';
+import PropTypes from 'prop-types';
+
 import { slide as Menu } from 'react-burger-menu';
 import Scroll from 'react-scroll';
-const Link = Scroll.Link;
+import { Sticky } from 'react-sticky';
 
 import Header from '../Header';
 
-import style from './style';
+import css from './style.css'; // Uses css instead of the usual 'style' to avoid variable shadowing with the sticky nav
 
-const PageMenu = ( props ) => {
+const { Link } = Scroll;
+
+const PageMenu = (props) => {
   const {
-    links
+    links,
   } = props;
 
-  const menuLinks = links.map((link) =>
-    <Link
-      activeClass={ style.active }
-      to={ link.target }
-      spy={ true }
-      smooth={ true }
-      offset={ -130 }
-      duration={ 500 }>
-      { link.name }
-    </Link>
-  );
+  const menuLinks = links.map(link =>
+    (
+      <Link
+        activeClass={css.active}
+        to={link.target}
+        spy
+        smooth
+        offset={-130}
+        duration={500}
+      >
+        { link.name }
+      </Link>));
 
   return (
-    <div class={ style.pageMenu }>
+    <div className={css.pageMenu}>
       <Sticky>
         { ({ isSticky, style }) => (
           <Header
-            isSticky={ isSticky }
-            links={ menuLinks }
-            style={ style }
+            isSticky={isSticky}
+            links={menuLinks}
+            style={style}
           />
         ) }
       </Sticky>
@@ -41,11 +44,15 @@ const PageMenu = ( props ) => {
         { menuLinks }
       </Menu>
     </div>
-  )
+  );
 };
 
 PageMenu.defaultProps = {
   links: [],
-}
+};
+
+PageMenu.propTypes = {
+  links: PropTypes.array,
+};
 
 export default PageMenu;

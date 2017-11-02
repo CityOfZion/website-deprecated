@@ -35,12 +35,19 @@ jobs:
     working_directory: ~/repo-website
 
     steps:
+      - checkout
+
       - run:
-          name: Install some stuff
+          name: Install packages
           command: yarn install
+
+      - run:
+          name: Build bundle
+          command: yarn build
+
       - run:
           name: Deploy if tests pass and branch is Master
-          command: ./scripts/deploy-ghpages.sh build
+          command: pwd && ls -la && .circleci/deploy-ghpages.sh build
 
 workflows:
   version: 2

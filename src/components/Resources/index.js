@@ -43,7 +43,7 @@ const Resources = ( props ) => {
 
             <p class={ style.license }>Our code is free and 100% MIT-licensed; Even this website!</p>
             <p class={ style.pullRequest }>If you feel you can improve on anything, just send us a pull request.*</p>
-            <p class={ style.testNet }>*We run JSON-RPC nodes for the mainnet and testnet networks at seed[1-5].cityofzio.io:8880 Furthermore, we are able to provide testnet NEO and GAS for collaborating developers.</p>
+            <p class={ style.testNet }>*We run JSON-RPC nodes for the mainnet and testnet networks at seed[1-5].cityofzion.io:8880 Furthermore, we are able to provide testnet NEO and GAS for collaborating developers.</p>
           </ContentWrapper>
         </div>
       </div>

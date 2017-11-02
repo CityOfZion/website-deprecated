@@ -1,26 +1,29 @@
-import { h, Component } from 'preact';
+import PropTypes from 'prop-types';
 
-import style from './style';
+import style from './style.css';
 
-const ContentWrapper = ( props ) => {
+const ContentWrapper = (props) => {
   const {
     children,
-    narrow
+    narrow,
   } = props;
 
-  const isNarrow = () => {
-    return narrow;
-  }
+  const isNarrow = () => narrow;
 
   return (
-    <div class={ isNarrow() ? style.contentWrapperNarrow : style.contentWrapper }>
+    <div className={isNarrow() ? style.contentWrapperNarrow : style.contentWrapper}>
       { children }
     </div>
-  )
+  );
 };
 
 ContentWrapper.defaultProps = {
   narrow: false,
-}
+};
+
+ContentWrapper.propTypes = {
+  children: PropTypes.node.isRequired,
+  narrow: PropTypes.bool,
+};
 
 export default ContentWrapper;

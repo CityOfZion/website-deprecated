@@ -1037,7 +1037,7 @@ module.exports = {"projectList":"projectList__8xJMc","thumbnail":"thumbnail__3mB
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"pageMenu":"pageMenu__1NJws","active":"active__2vGcO"};
+module.exports = {"pageMenu":"pageMenu__1NJws","active":"active__2vGcO","burgerButton":"burgerButton__mJtGN","burgerBars":"burgerBars__179_m","crossButton":"crossButton__3PXIT","cross":"cross__3NIeb","menu":"menu__cHzDk","itemList":"itemList__2QeQO","overlay":"overlay__1Tmcm","bm-burger-button":"bm-burger-button__2zv3b","bm-overlay":"bm-overlay__2jcGN","bm-menu-wrap":"bm-menu-wrap__3F5Sn"};
 
 /***/ }),
 
@@ -10822,6 +10822,12 @@ var PageMenu = function PageMenu(props) {
     );
   });
 
+  var _ref2 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+    __WEBPACK_IMPORTED_MODULE_3_react_responsive___default.a,
+    { query: '(min-width: 992px)' },
+    menuLinks
+  );
+
   return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
     'div',
     { className: __WEBPACK_IMPORTED_MODULE_7__style_css___default.a.pageMenu },
@@ -10831,11 +10837,14 @@ var PageMenu = function PageMenu(props) {
       function (_ref) {
         var isSticky = _ref.isSticky,
             style = _ref.style;
-        return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(__WEBPACK_IMPORTED_MODULE_6__Header__["a" /* default */], {
-          isSticky: isSticky,
-          links: menuLinks,
-          style: style
-        });
+        return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+          __WEBPACK_IMPORTED_MODULE_6__Header__["a" /* default */],
+          {
+            isSticky: isSticky,
+            style: style
+          },
+          _ref2
+        );
       }
     ),
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
@@ -10843,7 +10852,16 @@ var PageMenu = function PageMenu(props) {
       { query: '(max-width: 991px)' },
       __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
         __WEBPACK_IMPORTED_MODULE_2_react_burger_menu__["slide"],
-        { right: true },
+        {
+          burgerBarClassName: __WEBPACK_IMPORTED_MODULE_7__style_css___default.a.burgerBars,
+          burgerButtonClassName: __WEBPACK_IMPORTED_MODULE_7__style_css___default.a.burgerButton,
+          crossButtonClassName: __WEBPACK_IMPORTED_MODULE_7__style_css___default.a.crossButton,
+          crossClassName: __WEBPACK_IMPORTED_MODULE_7__style_css___default.a.cross,
+          itemListClassName: __WEBPACK_IMPORTED_MODULE_7__style_css___default.a.itemList,
+          menuClassName: __WEBPACK_IMPORTED_MODULE_7__style_css___default.a.menu,
+          overlayClassName: __WEBPACK_IMPORTED_MODULE_7__style_css___default.a.overlay,
+          right: true
+        },
         menuLinks
       )
     )
@@ -11054,12 +11072,10 @@ module.exports = {"home":"home__MseGd","headingCOZ":"headingCOZ__2NnxS","subHead
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_preact___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_preact__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__("5D9O");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_responsive__ = __webpack_require__("bP4d");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_responsive___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react_responsive__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ContentWrapper__ = __webpack_require__("HKvr");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Logo__ = __webpack_require__("fysa");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__style_css__ = __webpack_require__("A8Bg");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__style_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__style_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ContentWrapper__ = __webpack_require__("HKvr");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Logo__ = __webpack_require__("fysa");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__style_css__ = __webpack_require__("A8Bg");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__style_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__style_css__);
 
 
 
@@ -11068,37 +11084,32 @@ module.exports = {"home":"home__MseGd","headingCOZ":"headingCOZ__2NnxS","subHead
 
 
 
-
-var _ref = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(__WEBPACK_IMPORTED_MODULE_4__Logo__["a" /* default */], null);
+var _ref = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(__WEBPACK_IMPORTED_MODULE_3__Logo__["a" /* default */], null);
 
 var Header = function Header(props) {
-  var isSticky = props.isSticky,
-      links = props.links,
+  var children = props.children,
+      isSticky = props.isSticky,
       style = props.style;
 
 
   return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
     'header',
-    { className: __WEBPACK_IMPORTED_MODULE_5__style_css___default.a.header, style: style },
+    { className: __WEBPACK_IMPORTED_MODULE_4__style_css___default.a.header, style: style },
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
       'div',
-      { className: isSticky ? __WEBPACK_IMPORTED_MODULE_5__style_css___default.a.headerWrapperVisible : __WEBPACK_IMPORTED_MODULE_5__style_css___default.a.headerWrapper },
+      { className: isSticky ? __WEBPACK_IMPORTED_MODULE_4__style_css___default.a.headerWrapperVisible : __WEBPACK_IMPORTED_MODULE_4__style_css___default.a.headerWrapper },
       __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-        __WEBPACK_IMPORTED_MODULE_3__ContentWrapper__["a" /* default */],
+        __WEBPACK_IMPORTED_MODULE_2__ContentWrapper__["a" /* default */],
         null,
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
           'div',
-          { className: __WEBPACK_IMPORTED_MODULE_5__style_css___default.a.logo },
+          { className: __WEBPACK_IMPORTED_MODULE_4__style_css___default.a.logo },
           _ref
         ),
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-          __WEBPACK_IMPORTED_MODULE_2_react_responsive___default.a,
-          { query: '(min-width: 992px)' },
-          __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-            'nav',
-            null,
-            links
-          )
+          'nav',
+          null,
+          children
         )
       )
     )

@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import MediaQuery from 'react-responsive';
 
 import ContentWrapper from '../ContentWrapper';
 import Logo from '../Logo';
@@ -16,9 +17,11 @@ const Header = (props) => {
             <Logo />
           </div>
 
-          <nav>
-            { links }
-          </nav>
+          <MediaQuery query="(min-width: 992px)">
+            <nav>
+              { links }
+            </nav>
+          </MediaQuery>
         </ContentWrapper>
       </div>
     </header>

@@ -29,7 +29,8 @@
     "preact-router": "^2.5.7",
     "prop-types": "^15.6.0",
     "react-burger-menu": "^2.1.6",
-    "react-scroll": "1.5.4",
+    "react-responsive": "^3.0.0",
+    "react-scroll": "1.5.5",
     "react-sticky": "^6.0.1"
   }
 }

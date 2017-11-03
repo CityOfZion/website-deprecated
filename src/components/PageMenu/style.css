@@ -29,3 +29,71 @@
   background-image: linear-gradient(to right, #2A43C1, #4598FF);
   box-shadow: 0 2px 4px #13132F;
 }
+
+/* Position and sizing of burger button */
+.burgerButton {
+  position: fixed;
+  width: 23px;
+  height: 14px;
+  right: 19px;
+  top: 24px;
+  z-index: 200 !important;
+}
+
+@media screen and (min-width: 351px) {
+  .burgerButton {
+    right: 49px;
+    top: 33px;
+  }
+}
+
+/* Color/shape of burger icon bars */
+.burgerBars {
+  background: #4096ff;
+}
+
+/* Position and sizing of clickable cross button */
+.crossButton {
+  height: 24px;
+  width: 24px;
+  display: none;
+}
+
+/* Color/shape of close button cross */
+.cross {
+  background: #bdc3c7;
+}
+
+/* General sidebar styles */
+.menu {
+  background: #343470;
+  padding: 100px 20px 0;
+  font-size: 1.15em;
+  margin-top: -120px;
+  text-align: right;
+}
+
+/* Wrapper for item list */
+.itemList {
+  color: #b8b7ad;
+}
+
+.itemList a {
+  margin: 30px 35px;
+  font-size: 16px;
+  display: inline-block !important;
+}
+
+/* Styling of overlay */
+.overlay {
+  background: rgba(0, 0, 0, 0.3);
+  margin: -120px 20px 20px 0;
+}
+
+@media screen and (min-width: 992px) {
+  .bm-burger-button,
+  .bm-overlay,
+  .bm-menu-wrap {
+    display: none;
+  }
+}

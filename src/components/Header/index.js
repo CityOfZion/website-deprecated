@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import MediaQuery from 'react-responsive';
 
 import ContentWrapper from '../ContentWrapper';
 import Logo from '../Logo';
@@ -7,7 +6,7 @@ import Logo from '../Logo';
 import css from './style.css';
 
 const Header = (props) => {
-  const { isSticky, links, style } = props;
+  const { children, isSticky, style } = props;
 
   return (
     <header className={css.header} style={style}>
@@ -17,11 +16,9 @@ const Header = (props) => {
             <Logo />
           </div>
 
-          <MediaQuery query="(min-width: 992px)">
-            <nav>
-              { links }
-            </nav>
-          </MediaQuery>
+          <nav>
+            { children }
+          </nav>
         </ContentWrapper>
       </div>
     </header>
@@ -33,8 +30,8 @@ Header.defaultProps = {
 };
 
 Header.propTypes = {
+  children: PropTypes.node.isRequired,
   isSticky: PropTypes.bool,
-  links: PropTypes.node.isRequired,
   style: PropTypes.object.isRequired,
 };
 

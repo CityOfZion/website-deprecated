@@ -34,14 +34,26 @@ const PageMenu = (props) => {
         { ({ isSticky, style }) => (
           <Header
             isSticky={isSticky}
-            links={menuLinks}
             style={style}
-          />
+          >
+            <MediaQuery query="(min-width: 992px)">
+              {menuLinks}
+            </MediaQuery>
+          </Header>
         ) }
       </Sticky>
 
       <MediaQuery query="(max-width: 991px)">
-        <Menu right>
+        <Menu
+          burgerBarClassName={css.burgerBars}
+          burgerButtonClassName={css.burgerButton}
+          crossButtonClassName={css.crossButton}
+          crossClassName={css.cross}
+          itemListClassName={css.itemList}
+          menuClassName={css.menu}
+          overlayClassName={css.overlay}
+          right
+        >
           { menuLinks }
         </Menu>
       </MediaQuery>

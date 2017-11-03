@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-
 import { slide as Menu } from 'react-burger-menu';
+import MediaQuery from 'react-responsive';
 import Scroll from 'react-scroll';
 import { Sticky } from 'react-sticky';
 
@@ -40,9 +40,11 @@ const PageMenu = (props) => {
         ) }
       </Sticky>
 
-      <Menu right>
-        { menuLinks }
-      </Menu>
+      <MediaQuery query="(max-width: 991px)">
+        <Menu right>
+          { menuLinks }
+        </Menu>
+      </MediaQuery>
     </div>
   );
 };

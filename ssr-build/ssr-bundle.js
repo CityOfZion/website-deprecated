@@ -14840,7 +14840,7 @@ var App = function (_Component) {
           description: 'Neoscan is a high-performance block explorer and API laying the foundation for other projects.',
           heading: 'NEOScan',
           link: 'View NEOScan',
-          target: 'https://neoscan.herokuapp.com/',
+          target: 'https://neoscan.io/',
           thumbnail: {
             alt: 'NEOScan',
             src: '/assets/images/neo-scan.jpg'

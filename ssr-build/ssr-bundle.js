@@ -14812,7 +14812,7 @@ var App = function (_Component) {
           description: 'The City of Zion council is promoting a decentralised apps (dApps) competition to further elevate the NEO developer community.',
           heading: 'dApps Competition #1',
           link: 'Submit your registration',
-          target: 'https://cityofzion.io/dapps/1',
+          target: 'http://cityofzion.io/dapps/1',
           thumbnail: {
             alt: 'dApps Competition #1',
             src: '/assets/images/dapps-comp-1.png'

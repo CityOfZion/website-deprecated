@@ -80,7 +80,7 @@ export default class App extends Component {
             description: 'A portal to unify developers on a single app. Supporting projects, invites, and more!',
             heading: 'Neo Portal',
             link: 'View the Portal',
-            target: 'https://github.com/CityOfZion/neo-slack-bot',
+            target: 'https://github.com/CityOfZion/neo-admin-portal',
             thumbnail: {
               alt: 'Neo Portal',
               src: '/assets/images/neo-portal.jpg',

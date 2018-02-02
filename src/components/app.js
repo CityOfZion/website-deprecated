@@ -164,7 +164,7 @@ export default class App extends Component {
               name: 'Facebook', heading: 'Message us', subtitle: 'on Facebook', target: 'https://www.facebook.com/CityOfZionOfficial', logo: '/assets/images/facebook.png',
             },
             {
-              name: 'Twitter', heading: 'Tweet us', subtitle: 'on Twitter', target: 'https://twitter.com/cityofzion_neo', logo: '/assets/images/twitter.png',
+              name: 'Twitter', heading: 'Tweet us', subtitle: 'on Twitter', target: 'https://twitter.com/coz_official', logo: '/assets/images/twitter.png',
             },
             {
               name: 'Medium', heading: 'Follow us', subtitle: 'on Medium', target: 'https://medium.com/@cityofzion', logo: '/assets/images/medium.png',

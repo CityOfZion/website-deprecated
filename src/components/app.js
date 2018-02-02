@@ -21,7 +21,7 @@ export default class App extends Component {
 
     this.data = {
       page: {
-        copyright: '© Copyright City of Zion, 2017',
+        copyright: 'Copyright © City of Zion',
       },
       pageMenu: {
         links: [
@@ -35,12 +35,22 @@ export default class App extends Component {
       content: {
         eventList: [
           {
-            description: 'The City of Zion council is promoting a decentralised apps (dApps) competition to further elevate the NEO developer community.',
+            description: 'The first City of Zion dApp competition is completed. See a review of the entries <a href="TODO">here</a>.',
             heading: 'dApps Competition #1',
-            link: 'Submit your registration',
+            link: 'More information',
             target: 'http://cityofzion.io/dapps/1',
             thumbnail: {
               alt: 'dApps Competition #1',
+              src: '/assets/images/dapps-comp-1.png',
+            },
+          },
+          {
+            description: 'The City of Zion council is currently running the second decentralised apps (dApps) competition to further elevate the NEO developer community.',
+            heading: 'dApps Competition #2',
+            link: 'More information',
+            target: 'http://cityofzion.io/dapps/2',
+            thumbnail: {
+              alt: 'dApps Competition #2',
               src: '/assets/images/dapps-comp-1.png',
             },
           },
@@ -158,7 +168,7 @@ export default class App extends Component {
               name: 'Slack', heading: 'Join', subtitle: 'our Slack Channel', target: 'https://slack.cityofzion.io', logo: '/assets/images/slack.png',
             },
             {
-              name: 'Github', heading: 'Fork', subtitle: 'our Github Repository', target: 'https://github.com/CityOfZion', logo: '/assets/images/github.png',
+              name: 'Github', heading: 'Fork', subtitle: 'our Github Repositories', target: 'https://github.com/CityOfZion', logo: '/assets/images/github.png',
             },
             {
               name: 'Facebook', heading: 'Message us', subtitle: 'on Facebook', target: 'https://www.facebook.com/CityOfZionOfficial', logo: '/assets/images/facebook.png',

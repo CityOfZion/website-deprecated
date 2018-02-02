@@ -65,6 +65,8 @@ export default class Home extends Component {
               <p className={style.subtitle}>Exemplary projects created through collaborative or individual efforts from the City of Zion.</p>
 
               <ProjectList list={projectList} />
+
+              <p className={style.subtitle}>You can find many more projects on the <a href="https://github.com/CityOfZion">City of Zion GitHub</a>.</p>
             </ContentWrapper>
           </Element>
         </section>

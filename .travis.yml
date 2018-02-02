@@ -1,0 +1,21 @@
+language: node_js
+node_js: "7"
+install: yarn
+
+script:
+  # Install dependencies
+  - yarn
+
+  # Run the tests
+  - yarn test
+
+  # Prepare the GitHub pages update
+  - yarn build
+
+deploy:
+  on:
+    branch: master
+  skip_cleanup: true
+  provider: pages
+  local_dir: build
+  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard

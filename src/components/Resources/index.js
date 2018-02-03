@@ -41,11 +41,11 @@ const Resources = (props) => {
 
             <hr />
 
-            <p className={style.license}>Our code is free and 100% MIT-licensed; Even this website!</p>
-            <p className={style.pullRequest}>If you feel you can improve on anything, just send us a pull request.*</p>
+            <p className={style.license}>Our code is free and 100% MIT-licensed; even this website!</p>
+            <p className={style.pullRequest}>If you feel you can improve on anything, just send us a pull request.</p>
             <p className={style.testNet}>
-              *We run JSON-RPC nodes for the mainnet and testnet networks at seed[1-5].cityofzion.io:8880
-              Furthermore, we are able to provide testnet NEO and GAS for collaborating developers.
+              We also run JSON-RPC nodes for the mainnet and testnet networks at seed[1-5].cityofzion.io:8880
+              Furthermore, and we are able to provide testnet NEO and GAS for collaborating developers.
             </p>
           </ContentWrapper>
         </div>
